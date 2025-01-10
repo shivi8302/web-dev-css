@@ -68,15 +68,13 @@ html,body{
     transform: translate(2.9%,70%);
 
 }
-#nav h5 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    color: #fff;
-    border: 3px solid white;
+#nav header img{
+    float:left;
+    width: 45px;
+    padding-left: 5%;
+    padding-right: 2%;
+    filter: invert(1);
+           
 }
 
 #main #hero{

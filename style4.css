@@ -1,0 +1,64 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fullscreen section with background image */
+.hero {
+    height: 100vh; /* Full viewport height */
+    background-image: url('pexels-pixabay-147411.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Needed for absolute positioning inside */
+}
+
+/* Overlay to darken the background image */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+}
+
+/* Centered content in the hero section */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+/* Heading styles */
+.content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Paragraph styles */
+.content p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+/* Call-to-action button */
+.cta-button {
+    padding: 15px 30px;
+    background-color: #ff7f50; /* Vibrant button color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff6347; /* Slightly darker on hover */
+}
